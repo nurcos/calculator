@@ -1,0 +1,89 @@
+body {
+  background-color: #454545;
+  font: 42px 'Blinker', sans-serif;
+  user-select: none;
+}
+
+.calculator {
+  background-color: #c9c9c9;
+  width: 20%;
+  min-width: 400px;
+  height: 500px;
+  margin: 5% auto;
+  border-radius: 100px;
+  border: 5px solid black;
+  padding: 1% 2% 2% 2%;
+  cursor: default;
+}
+
+.text-area {
+  width: 93%;
+  height: 12%;
+  border-radius: 20px;
+  border: 2px solid black;
+  text-align: right;
+  margin: 0 0 10% 0;
+  background-color: green;
+  padding-right: 5%;
+  overflow: hidden;
+}
+
+.button {
+  width: 29%;
+  display: inline-block;
+  height: 70px;
+  line-height: 70px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #737373;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #404040;
+}
+
+.digit-container {
+  width: 60%;
+  display: inline-block;
+}
+
+.digit {
+  margin-bottom: 2%;
+}
+
+.action-container {
+  width: 38%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.action {
+  width: 45%;
+  margin-bottom: 3%;
+}
+
+.clear {
+  background-color: red;
+}
+
+.operator {
+  color: blue;
+}
+
+.equals {
+  width: 98%;
+  color: green;
+}
+
+/*
+JS
+*/
+
+.keydown {
+  background-color: #404040;
+}
