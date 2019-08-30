@@ -24,16 +24,16 @@ window.addEventListener('keydown', function(e){
 
 digitButtons.forEach(function(button){
     button.addEventListener('click', function(){
-      if(operatorPressed == false && equalsPressed == true){
+      if(operatorPressed == false && equalsPressed){
         total = 0;
         a = 0;
         b = 0;
         displayValue.textContent = ''
         equalsPressed = false;
       }
-      if(displayValue.textContent == 0|| operatorPressed == true){
-        displayValue.textContent = ''
-        operatorPressed = false
+      if(displayValue.textContent == '0' || operatorPressed){
+        displayValue.textContent = '';
+        operatorPressed = false;
       }
       if(displayValue.textContent.length > 14){
         return;
