@@ -1,11 +1,72 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  background-color: #454545;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+END OF RESET
+*/
+
+body {
+  background-color: #ccd3ef;
   font: 42px 'Blinker', sans-serif;
   user-select: none;
 }
 
+h1 {
+  font-size: 150%;
+	margin-bottom: 20px;
+	font-weight: bold;
+	color: #31375f;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .calculator {
-  background-color: #c9c9c9;
+  background-color: #ccd3ef;
   width: 20%;
   min-width: 400px;
   height: 500px;
@@ -23,9 +84,10 @@ body {
   border: 2px solid black;
   text-align: right;
   margin: 0 0 10% 0;
-  background-color: green;
+  background-color: #31375f;
   padding-right: 5%;
   overflow: hidden;
+  color: white;
 }
 
 .button {
@@ -36,15 +98,17 @@ body {
   border: 2px solid black;
   border-radius: 10px;
   text-align: center;
+  background-color: #31375f;
+  color: white;
 }
 
 .button:hover {
-  background-color: #737373;
+  background-color: #5A79B3;
   cursor: pointer;
 }
 
 .button:active {
-  background-color: #404040;
+  background-color: #ccd3ef;
 }
 
 .digit-container {
@@ -72,12 +136,12 @@ body {
 }
 
 .operator {
-  color: blue;
+  color: #00ceff;
 }
 
 .equals {
   width: 98%;
-  color: green;
+  color: #00ff00;
 }
 
 /*
@@ -85,5 +149,5 @@ JS
 */
 
 .keydown {
-  background-color: #404040;
+  background-color: #ccd3ef;
 }
